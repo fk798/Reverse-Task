@@ -80,7 +80,7 @@ class App extends Component {
             <p key={index}> {key} : {this.state.individuals[key]}</p> 
           ))
         }
-        <button onClick={this.handleSubmit}>Submit</button>
+        <button onClick={this.handleSubmit}>Submit to Test Cases!</button>
         <br></br>
         <hr></hr>
         <h3>Test Cases:</h3>
