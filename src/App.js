@@ -68,7 +68,7 @@ class App extends Component {
     return (
       <div className="App">
         <h3>The following program takes a string and displays its reverse as well as a list of the unique characters in the string with its count:</h3>
-        <label htmlFor="input"><b>Input</b></label>
+        <label htmlFor="input"><b>Input:</b></label>
         <br></br>
         <input id="input" type="text" value = {this.state.input} onChange={this.handleInput} placeholder="Type anything!"/>
         <p><b>Your input:</b> {this.state.input}</p>
