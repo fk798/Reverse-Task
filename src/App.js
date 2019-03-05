@@ -62,7 +62,6 @@ class App extends Component {
       reverse: "",
       individuals: {}
     })
-    console.log(this.state.testCases)
   }
 
   render() {
@@ -85,16 +84,17 @@ class App extends Component {
         <h3>Test Cases:</h3>
         <div>
         {this.state.testCases.map((item, index) => 
-            <div key={index}>
+          <div key={index}>
             <p><b>Word:</b> {item.input}</p>
             <p><b>Reverse:</b> {item.reverse}</p>
-            <p><b>Individual letters and count:</b></p>{
-          Object.keys(item.individuals).map((key, index) => ( 
-            <p key={index}> {key} : {item.individuals[key]}</p> 
-          ))
-        }
+            <p><b>Individual letters and count:</b></p>
+            {
+              Object.keys(item.individuals).map((key, index) => ( 
+                <p key={index}> {key} : {item.individuals[key]}</p> 
+              ))
+            }
             <hr></hr>
-            </div>
+          </div>
         )}
         </div>
       </div>
