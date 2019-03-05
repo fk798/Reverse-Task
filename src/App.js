@@ -68,6 +68,7 @@ class App extends Component {
     return (
       <div className="App">
         <h3>The following program takes a string and displays its reverse as well as a list of the unique characters in the string with its count:</h3>
+        <hr></hr>
         <label htmlFor="input"><b>Input:</b></label>
         <br></br>
         <input id="input" type="text" value = {this.state.input} onChange={this.handleInput} placeholder="Type anything!"/>
@@ -80,8 +81,10 @@ class App extends Component {
           ))
         }
         <button onClick={this.handleSubmit}>Submit</button>
+        <br></br>
         <hr></hr>
         <h3>Test Cases:</h3>
+        <hr></hr>
         <div>
         {this.state.testCases.map((item, index) => 
           <div key={index}>
